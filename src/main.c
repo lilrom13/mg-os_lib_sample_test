@@ -14,13 +14,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
-#include <stdio.h>
 
 #include "mgos.h"
+#include "mgos_lib_sample.h"
 
 enum mgos_app_init_result mgos_app_init(void) {
-  printf("Hello World\n");
-
+  mgos_lib_sample_init();
   return MGOS_APP_INIT_SUCCESS;
 }
